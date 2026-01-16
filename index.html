@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./assets/img/aimforce-logo.svg">
+<title>AimForce — Play Free Games & Learn Game Dev</title>
+<meta name="description" content="AimForce is a modern, responsive game website with an engaging canvas game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+  /* 
+    New Light Theme. 
+    For site-wide changes, move these variables to :root in assets/css/style.css 
+  */
+ 
+
+</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+/* AimForce Popup */
+.af-overlay{position:fixed;inset:0;background:rgba(3,6,23,.74);backdrop-filter:saturate(140%) blur(6px);display:flex;align-items:center;justify-content:center;z-index:9999;}
+.af-modal{width:min(92vw,560px);background:#0b1020;color:#e5e7eb;border:1px solid rgba(148,163,184,.25);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.45);padding:24px 20px 18px;position:relative;}
+.af-close{position:absolute;top:10px;right:12px;border:0;background:transparent;color:#cbd5e1;font-size:24px;cursor:pointer;line-height:1;}
+.af-logo{display:flex;justify-content:center;align-items:center;margin-top:8px;margin-bottom:8px;}
+.af-logo img{height:36px;opacity:.95}
+#af-title{font-size:22px;margin:6px 0 8px 0;}
+.af-text{font-size:15px;line-height:1.6;color:#cbd5e1;margin:0 4px 14px 4px}
+.af-actions{display:flex;gap:10px;justify-content:flex-end}
+.af-btn{appearance:none;border:0;border-radius:12px;padding:10px 16px;font-weight:700;cursor:pointer;background:#22d3ee;color:#0b1020}
+.af-btn:hover{filter:brightness(1.03)}
+.af-secondary{background:transparent;color:#e5e7eb;border:1px solid rgba(148,163,184,.35)}
+@media (max-width: 480px){.af-modal{padding:18px 14px;border-radius:14px}.af-actions{flex-direction:column}}
+
+  </style>
+</head>
+<body>
+
+    <section class="relative overflow-hidden bg-slate-950 text-white">
+      <div class="absolute inset-0 opacity-20" style="background: radial-gradient(600px 300px at 20% 20%, #22d3ee33, transparent), radial-gradient(600px 300px at 80% 30%, #8b5cf633, transparent);"></div>
+      <div class="container mx-auto px-4 py-20 relative">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Play Free Games. <span class="text-cyan-300">Learn</span> How They’re Built.</h1>
+        <p class="mt-4 max-w-2xl text-slate-300 text-lg">AimForce is a modern gaming hub that blends instant‑play browser games with hands‑on tutorials, dev blogs, and open source examples—so you can play, learn, and ship your own games.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="game.html" class="px-6 py-3 rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-slate-900 font-semibold">Play Games</a>
+          <a href="about.html" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 font-semibold">Learn & Blog</a>
+          <a href="leaderboard.html" class="px-6 py-3 rounded-xl bg-fuchsia-500/90 hover:bg-fuchsia-400 text-white font-semibold">Leaderboards</a>
+        </div>
+      </div>
+    </section>
+    
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html" aria-label="Home">
+      <img src="../assets/img/aimforce-logo.svg" alt="AimForce" height="36"/><span>AimForce</span>
+    </a>
+    <div class="menu" data-nav-menu>
+      <a href="index.html" class="active">Home</a>
+      <a href="game.html" >Play Game</a>
+      <a href="leaderboard.html" >Leaderboard</a>
+      <a href="about.html" >About</a>
+      <a href="blog.html" >Blog</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="privacy.html" >Privacy</a>
+      <a href="terms.html" >Terms</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="right">
+      <a class="btn ghost" data-nav-toggle>Menu</a>
+      <a class="btn" href="game.html">Play</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container grid">
+    <div>
+      <div class="badge">Weave • Solve • Master</div>
+      <h1>AimForce — the ultimate anagram puzzle adventure.</h1>
+      <p>Challenge yourself with endless word chains, unlock themed packs, and face timed or multiplayer battles.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="game.html">Play Now</a>
+        <a class="btn ghost" href="blog.html">Read the Blog</a>
+      </div>
+      <div class="kudos">
+        <span class="pill">⚡ Fast & replayable</span>
+        <span class="pill">📱 Mobile-optimized</span>
+        <span class="pill">🧩 Endless puzzles</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="grid-2">
+        <div class="card">
+          <div class="stat">
+            <div class="n">50k+</div>
+            <div class="t">Words Formed</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="stat">
+            <div class="n">1.5s</div>
+            <div class="t">Avg First Move</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section container">
+  <h2>Why players keep weaving</h2>
+  <p>Themes, streak combos, and leaderboards make every session addictive. Works perfectly on any device.</p>
+  <div class="fe-grid">
+    <div class="card fe"><h3>Engaging Content</h3><p>About, FAQ, and Blog pages with strategies and stories.</p></div>
+    <div class="card fe"><h3>Performance</h3><p>Built with vanilla HTML/CSS/JS; zero bulky frameworks.</p></div>
+    <div class="card fe"><h3>Clarity</h3><p>Clean navigation with fully accessible design.</p></div>
+  </div>
+</section>
+
+<section class="section container">
+  <h2>Featured Modes</h2>
+  <div class="showcase">
+    <div class="tile"><img src="assets/img/Untitled (348 x 522 px).png" alt="" style="width:100%;height:100%;opacity:.6;object-fit:cover"><div class="cap">Classic Weave</div></div>
+    <div class="tile"><img src="assets/img/Untitled (348 x 522 px).png" alt="" style="width:100%;height:100%;opacity:.6;object-fit:cover"><div class="cap">Leaderboard Battles</div></div>
+    <div class="tile"><img src="assets/img/Untitled (348 x 522 px).png" alt="" style="width:100%;height:100%;opacity:.6;object-fit:cover"><div class="cap">Blog & Tips</div></div>
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <div class="cta card">
+    <h2>Got feedback, collab ideas, or theme requests?</h2>
+    <p>Share your thoughts — we’ll keep weaving new features for you.</p>
+    <form id="contact-form" style="max-width:720px;margin:18px auto 0;text-align:left">
+      <div class="form-row">
+        <div><label for="contact-name">Name</label><input id="contact-name" name="name" required placeholder="Ada Lovelace" aria-label="Name"></div>
+        <div><label for="contact-email">Email</label><input id="contact-email" name="email" required type="email" placeholder="you@company.com" aria-label="Email"></div>
+      </div>
+      <div style="height:12px"></div>
+      <div><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="4" placeholder="What do you want to change?" aria-label="Message"></textarea></div>
+      <div style="height:18px"></div>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© 2025 AimForce. All rights reserved.</div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <span class="badge">Responsive • Age-gate</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+  <script src="assets/js/popup.js"></script>
+</body>
+</html>\n<footer style="background:#0b1220;color:#e5e7eb;border-top:1px solid #1f2937">

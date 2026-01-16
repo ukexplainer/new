@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./assets/img/aimforce-logo.svg">
+<title>AimForce — Blog</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head><body>
+<nav class="nav"><div class="container nav-inner">
+  <a class="logo" href="index.html"><img src="assets/img/aimforce-logo.svg" alt="AimForce icon"><span>AimForce</span></a>
+  <div class="menu" data-nav-menu>
+    <a href="index.html">Home</a><a href="game.html">Play Game</a><a href="leaderboard.html">Leaderboard</a>
+    <a href="about.html">About</a><a href="blog.html" class="active">Blog</a><a href="faq.html">FAQ</a>
+    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="index.html#contact">Contact</a>
+  </div>
+  <div class="right"><a class="btn ghost" data-nav-toggle>Menu</a><a class="btn" href="game.html">Play</a></div>
+</div></nav>
+<header class="hero"><div class="container"><h1>Blog</h1><p>Readable, practical posts about building smooth browser games—and why people love to play them.</p></div></header>
+<section class="section container"><div class="blog-grid">
+
+<div class="card blog-card">
+  <h3>Optimizing Canvas Games for Mobile</h3>
+  <div class="meta">Practical steps to hit smooth performance on budget devices.</div>
+  <p class="excerpt">Keep draw calls minimal and reuse objects whenever possible. Aim for consistent frame pacing instead of occasional spikes. Profile often and push heavy work like logging or analytics outside the render loop.</p>
+  <a class="btn ghost read" href="posts/mobile-canvas-fast.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Crafting Memorable Power-ups</h3>
+  <div class="meta">Design boosts that feel fun instead of gimmicky.</div>
+  <p class="excerpt">A shield gives confidence to explore riskier moves, while slow motion rewards timing and control. Score multipliers keep streaks exciting. Balance is key—each boost should change strategy, not just numbers.</p>
+  <a class="btn ghost read" href="posts/rewarding-powerups.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Input That Feels Instant</h3>
+  <div class="meta">Techniques for snappy, intuitive player control.</div>
+  <p class="excerpt">Process input events immediately and update movement in the same frame. Add smoothing only for visuals, not logic. Relative deltas from mouse or touch gestures usually feel more natural than absolute positioning.</p>
+  <a class="btn ghost read" href="posts/latency-controls.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Building Local High Scores</h3>
+  <div class="meta">Simple leaderboards without a server.</div>
+  <p class="excerpt">Store scores with timestamps in localStorage. Sort descending, trim to a fixed limit, and display the best runs. Save only on game over to avoid excess writes. Provide a one-click reset option for privacy.</p>
+  <a class="btn ghost read" href="posts/local-leaderboards.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Accessibility Tips for Web Games</h3>
+  <div class="meta">Easy adjustments that broaden your audience.</div>
+  <p class="excerpt">Ensure text has enough contrast and size for readability. Support keyboard-only play and highlight focus states. Respect system settings like reduced motion, and pause effects when the tab isn’t active.</p>
+  <a class="btn ghost read" href="posts/a11y-checklist.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Scaling Canvas Responsively</h3>
+  <div class="meta">Adapt visuals without breaking game logic.</div>
+  <p class="excerpt">Keep a fixed internal resolution for physics and game rules. Use CSS transforms or responsive layouts to scale the display. Always clamp objects to the logical bounds to prevent off-screen glitches.</p>
+  <a class="btn ghost read" href="posts/responsive-canvas.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Why Vanilla JavaScript Still Wins</h3>
+  <div class="meta">Lightweight code for reliable browser games.</div>
+  <p class="excerpt">Skipping frameworks means fewer dependencies and faster startup. Keep modules small and organized by game feature. Use DevTools to check unused code and measure load performance before shipping.</p>
+  <a class="btn ghost read" href="posts/ship-plain-js.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Fair Monetization Practices</h3>
+  <div class="meta">Ways to support your game without losing trust.</div>
+  <p class="excerpt">Ads and purchases should never block gameplay flow. Offer clear choices and explain what’s being collected. Keep interruptions limited and provide easy opt-outs for a better long-term relationship with players.</p>
+  <a class="btn ghost read" href="posts/ethical-monetization.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>10 Browser Games Worth Trying</h3>
+  <div class="meta">Quick picks for a weekend of fun.</div>
+  <p class="excerpt">Great browser games load in seconds, play smoothly on a single hand, and restart instantly. Pixel art and simple mechanics often age the best. Explore itch.io and browser-game communities for hidden gems.</p>
+  <a class="btn ghost read" href="posts/top-browser-games.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>The Lasting Appeal of Retro Games</h3>
+  <div class="meta">Design lessons from the classics.</div>
+  <p class="excerpt">Tight levels and limited palettes created clarity and focus. Recognizable shapes made quick decisions possible. Their short, satisfying loops fit today’s mobile and browser play patterns perfectly.</p>
+  <a class="btn ghost read" href="posts/why-retro-matters.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>Indie HTML5 Games to Watch</h3>
+  <div class="meta">Small studios delivering fresh ideas.</div>
+  <p class="excerpt">From experimental controls to strong narrative themes, indie teams are pushing the boundaries of what web games can be. Follow their progress, test early builds, and support them with wishlist adds and feedback.</p>
+  <a class="btn ghost read" href="posts/indie-watchlist.html">Read article</a>
+</div>
+
+<div class="card blog-card">
+  <h3>UX Principles for Casual Players</h3>
+  <div class="meta">Design choices that welcome newcomers.</div>
+  <p class="excerpt">Make buttons obvious and explain controls on first play. Restart should take one tap, and best scores should be visible to spark another run. Add depth gradually—only after the first successful round.</p>
+  <a class="btn ghost read" href="posts/ui-ux-for-casual.html">Read article</a>
+</div>
+
+</div></section>
+<footer class="footer"><div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+  <div>© 2025 AimForce. All rights reserved.</div><div><span class="badge">Responsive • Age-gate</span></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>\n<footer style="background:#0b1220;color:#e5e7eb;border-top:1px solid #1f2937">
+  <div style="max-width:960px;margin:0 auto;padding:18px 24px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+    <div style="opacity:.9">© 2025 AimForce</div>
+    <nav style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="privacy.html" style="color:#38bdf8;text-decoration:none">Privacy</a>
+      <a href="cookie-policy.html" style="color:#38bdf8;text-decoration:none">Cookie Policy</a>
+      <a href="disclaimer.html" style="color:#38bdf8;text-decoration:none">Disclaimer</a>
+      <a href="community-guidelines.html" style="color:#38bdf8;text-decoration:none">Community Guidelines</a>
+      <a href="dmca.html" style="color:#38bdf8;text-decoration:none">DMCA</a>
+      <a href="faq.html" style="color:#38bdf8;text-decoration:none">FAQ</a>
+      <a href="sitemap.html" style="color:#38bdf8;text-decoration:none">Sitemap</a>
+      <a href="contact.html" style="color:#38bdf8;text-decoration:none">Contact</a>
+    </nav>
+  </div>
+</footer>
